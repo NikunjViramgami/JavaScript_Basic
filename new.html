@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="" id="age" value="18" />
+    <p id="demo">Please Visit Microsoft and Microsoft!</p>
+    <p id="demo1">Please use apple over apple</p>
+    <p id="demo3"></p>
+    <p id="try"></p>
+
+        <!-- <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Try Me?</button> -->
+        <!-- <button type="button" onclick="mycall()">TRY IT</button>
+        <button type="button" onclick="mycall1()">TRY Me</button> -->
+        <button type="button" onclick="myFunction()">TRY Me</button>
+        <script>
+            function mycall(){
+
+                let text = document.getElementById('demo').innerHTML;
+                document.getElementById('demo').innerHTML = text.replace("Microsoft","Apple")
+
+            }
+            function mycall1() {
+                    let text = document.getElementById("demo1").innerHTML; 
+                    document.getElementById("demo1").innerHTML =
+                    text.replace(/apple/g,"W3Schools");
+            }
+                let x = 5;
+                document.getElementById("demo").innerHTML = text.padEnd(4,"x");  
+                // uhh can use padstrat also
+
+                let text2 = "Hello";
+                const myArr = text.split("");
+
+                text3 = "";
+                for (let i = 0; i < myArr.length; i++) {
+                    text3 += myArr[i] + "<br>"
+                }   
+                document.getElementById("demo3").innerHTML = text3;
+
+                function myFunction() {
+  let age = document.getElementById("age").value;
+  let voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
+
+        </script>
+    
+</body>
+</html>
